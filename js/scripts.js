@@ -20,3 +20,7 @@ return pizzaPrice;
 Pizza.prototype.totalPizzaCost = function (testPizza) {
   return "The cost of your pizza will be" + " " + (this.sizeCost() + this.toppingsCost(this.pizzaToppings)) + " Kshs.";
 }
+
+$(document).ready(function() {
+  $('form#new-pizza').submit(function(event) {
+    event.preventDefault();

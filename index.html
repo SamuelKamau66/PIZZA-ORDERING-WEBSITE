@@ -1,92 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-  <title>Pizza Ordering Website</title>
-</head>
-<body>
-  <div class="divBar">
-  <table border="0" width="100%">
-      <tr>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pizza Ordering Website</title>
+  </head>
+  <body>
+    <div class="divBar">
+      <table border="0" width="100%">
+        <tr>
           <td width="20%" align="center" bgcolor="orange" class="nav">HOME</td>
           <td width="20%" align="center" bgcolor="orange" class="nav">ABOUT</td>
           <td width="20%" align="center" bgcolor="orange" class="nav">MENU</td>
           <td width="20%" align="center" bgcolor="orange" class="nav">VARIETIES</td>
           <td width="20%" align="center" bgcolor="orange" class="nav">FEEDBACK</td>
-      </tr>
-  </table>
-</div>
-<h1>WILKI PIZZA PLACE<h1>
-  <div class="container">
+        </tr>
+      </table>
+    </div>
+    <h1>WILKI PIZZA PLACE<h1>
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h2>Order the best pizza in Town Now!</h2>
           <form id="new-pizza">
-            <!--START SIZE RADIO -->
             <h4>Choose your size. Large will increase price by USD 2.00</h4>
             <div id="pizzaSize">
               <div class="radio">
                 <label>
                   <input type="radio" name="size" id="medium" value="Medium" checked>
-                  Medium
+                    Medium
                 </label>
               </div>
               <div class="radio">
                 <label>
                   <input type="radio" name="size" id="large" value="Large">
-                  Large
+                    Large
                 </label>
               </div>
             </div>
             <h4>Choose your toppings. Each topping selected will add USD 1.00 to price</h4>
-                <div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox" name="toppings" value="Hawaiian">
-                      Hawaiian
-                    </label>
-                  </div>
-                  <div class="checkbox">
+            <div>
+              <div class="checkbox">
                 <label>
-                  <input type="checkbox" name="toppings" value="BBQ Chicken">
-                  BBQ Chicken
+                  <input type="checkbox" name="toppings" value="Hawaiian">
+                    Hawaiian
                 </label>
               </div>
               <div class="checkbox">
-                  <label>
-                    <input type="checkbox" name="toppings" value="Margarita">
-                    Margarita
+                <label>
+                  <input type="checkbox" name="toppings" value="BBQ Chicken">
+                    BBQ Chicken
                   </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" name="toppings" value="BBQ Steak">
-                    BBQ Steak
-                  </label>
-                </div>
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox" name="toppings" value="Swahili Chicken">
-                    Swahili Chicken
-                  </label>
-                </div>
               </div>
-              <button type="submit" class="btn">Add Pizza to order!</button>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="toppings" value="Margarita">
+                    Margarita
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="toppings" value="BBQ Steak">
+                    BBQ Steak
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="toppings" value="Swahili Chicken">
+                    Swahili Chicken
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn">Add Pizza to order!</button>
           </form>
+            <h2>Your Order:</h2>
+            <ul id="order">
 
-          <h2>Your Order:</h2>
-          <ul id="order">
-
-          </ul>
+            </ul>
         </div>
       </div>
     </div>
-</body>
+  </body>
 </html>

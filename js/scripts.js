@@ -14,3 +14,9 @@ Pizza.prototype.sizeCost = function () {
 Pizza.prototype.toppingsCost = function () {
 var pizzaPrice = 10;
 pizzaPrice += this.pizzaToppings.length ;
+return pizzaPrice;
+}
+
+Pizza.prototype.totalPizzaCost = function (testPizza) {
+  return "The cost of your pizza will be" + " " + (this.sizeCost() + this.toppingsCost(this.pizzaToppings)) + " Kshs.";
+}

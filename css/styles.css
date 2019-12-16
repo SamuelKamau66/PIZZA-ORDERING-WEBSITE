@@ -14,3 +14,11 @@ h1 {
 .divBar {
   color: white;
 }
+.container {
+  background-color: grey;
+  opacity: 90%;
+  color: white;
+  width: 700px;
+  font-size: 20px;
+
+}

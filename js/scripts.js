@@ -24,3 +24,7 @@ Pizza.prototype.totalPizzaCost = function (testPizza) {
 $(document).ready(function() {
   $('form#new-pizza').submit(function(event) {
     event.preventDefault();
+
+    var inputtedSize = $('#pizzaSize input:radio:checked').val();
+    var checkedToppings = $('input[name=toppings]:checked');
+    var inputtedToppings = [];

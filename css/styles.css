@@ -2,3 +2,7 @@ h1 {
   color: white;
   text-align: center;
 }
+.nav:hover {
+  background-color: red;
+  border-radius: 10px;
+  height: 15px;
